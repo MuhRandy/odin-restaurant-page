@@ -1,0 +1,78 @@
+:root {
+  --uranium-blue: #b4e1ff;
+  --night: #151515;
+  --princeton-orange: #ff9505;
+  --selective-yellow: #ffb627;
+  --redwood: #a63d40;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: clip;
+  color: white;
+}
+
+body::before {
+  content: "";
+
+  position: absolute;
+  left: -300px;
+  z-index: -10;
+  background: url("./img/coloured-fishes-collection.png") var(--uranium-blue);
+  background-size: 220px;
+  min-width: 300vw;
+  min-height: 300vh;
+
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+body > div {
+  position: absolute;
+
+  overflow: scroll;
+}
+
+nav {
+  height: 100px;
+  background-color: var(--selective-yellow);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  flex: 1;
+
+  border: 1px solid #000;
+  padding: 30px;
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  display: grid;
+  place-content: center;
+}
+
+main {
+  margin: 0 20vw;
+  background-color: var(--selective-yellow);
+  overflow: scroll;
+}
