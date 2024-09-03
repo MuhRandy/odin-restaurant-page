@@ -191,3 +191,9 @@ h3 {
 #contacts ul {
   padding: 0;
 }
+
+footer {
+  text-align: center;
+  background-color: var(--selective-yellow);
+  padding: 20px;
+}
