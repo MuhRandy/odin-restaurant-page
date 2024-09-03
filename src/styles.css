@@ -55,7 +55,7 @@ nav li {
   right: 10px;
 }
 
-nav li:nth-of-type(2) {
+nav li:nth-of-type(3) {
   opacity: 1;
 }
 
@@ -149,7 +149,8 @@ h2 {
   -o-border-radius: 8px;
 }
 
-#home {
+#home,
+#menu {
   display: none;
 }
 
@@ -180,4 +181,8 @@ h3 {
 
 .price {
   margin-top: 10px;
+}
+
+#contacts ul {
+  padding: 0;
 }
