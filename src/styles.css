@@ -121,7 +121,8 @@ h2 {
   font-size: 1.2rem;
   text-align: right;
 
-  margin-right: 30px;
+  margin-right: 10px;
+  margin-top: 20px;
 }
 
 .content img {
@@ -138,8 +139,7 @@ h2 {
 }
 
 .content ul {
-  padding-left: 20px;
-  padding-top: 10px;
+  padding: 0;
 
   list-style: none;
 }
@@ -195,5 +195,27 @@ h3 {
 footer {
   text-align: center;
   background-color: var(--selective-yellow);
-  padding: 20px;
+}
+
+.attribution {
+  --ptb: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 5px;
+
+  padding-top: var(--ptb);
+  padding-bottom: var(--ptb);
+  list-style-type: none;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.myname {
+  background-color: var(--princeton-orange);
+  padding: 10px;
 }
