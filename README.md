@@ -1,4 +1,8 @@
-# odin-restaurant-page
+# Odin Restaurant Page
+
+This repo is for completing project on [The Odin Project](https://www.theodinproject.com)
+
+## Attribution
 
 - <a href="https://www.flaticon.com/free-icons/emoji" title="emoji icons">Angry cat face icons created by abdanbagus - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/cat" title="orange cat icons">Orange cat icons created by Flat Icons - Flaticon</a>
