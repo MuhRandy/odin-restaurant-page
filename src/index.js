@@ -77,37 +77,51 @@ const menuNav = document.querySelector("#menu-nav");
 const contactsNav = document.querySelector("#contacts-nav");
 
 const homeNavHandlerClick = () => {
-  homeNav.classList.add("active");
-  menuNav.classList.remove("active");
-  contactsNav.classList.remove("active");
+  inActiveNavs(menuNav, contactsNav);
+  activeNav(homeNav);
 
-  home.classList.remove("hidden");
-  menu.classList.add("hidden");
-  contacts.classList.add("hidden");
+  hideElements(menu, contacts);
+  showElement(home);
 };
 
 const menuNavHandlerClick = () => {
-  homeNav.classList.remove("active");
-  menuNav.classList.add("active");
-  contactsNav.classList.remove("active");
+  inActiveNavs(homeNav, contactsNav);
+  activeNav(menuNav);
 
-  home.classList.add("hidden");
-  menu.classList.remove("hidden");
-  contacts.classList.add("hidden");
+  hideElements(home, contacts);
+  showElement(menu);
 };
 
 const contactsNavHandlerClick = () => {
-  homeNav.classList.remove("active");
-  menuNav.classList.remove("active");
-  contactsNav.classList.add("active");
+  inActiveNavs(homeNav, menuNav);
+  activeNav(contactsNav);
 
-  home.classList.add("hidden");
-  menu.classList.add("hidden");
-  contacts.classList.remove("hidden");
+  hideElements(home, menu);
+  showElement(contacts);
 };
 
 homeNav.addEventListener("click", homeNavHandlerClick);
 menuNav.addEventListener("click", menuNavHandlerClick);
 contactsNav.addEventListener("click", contactsNavHandlerClick);
+
+function hideElements(...elements) {
+  elements.forEach((element) => {
+    element.classList.add("hidden");
+  });
+}
+
+function showElement(element) {
+  element.classList.remove("hidden");
+}
+
+function inActiveNavs(...navs) {
+  navs.forEach((nav) => {
+    nav.classList.remove("active");
+  });
+}
+
+function activeNav(nav) {
+  nav.classList.add("active");
+}
 
 homeNavHandlerClick();
