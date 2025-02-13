@@ -6,6 +6,11 @@
   --redwood: #a63d40;
 }
 
+@font-face {
+  font-family: Delius;
+  src: url("./font/Delius-Regular.ttf");
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -15,6 +20,7 @@ body {
   color: white;
   background: url("./img/coloured-fishes-collection.png") var(--uranium-blue);
   background-size: 120px;
+  font-family: Delius;
 }
 
 body > div {
